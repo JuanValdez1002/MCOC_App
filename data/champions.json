@@ -4,7 +4,7 @@
     "class": "Science",
     "release": "2014-11-03",
     "rarity": [3, 4, 5, 6, 7],
-    "image": "images/spiderman.png",
+    "image": "images/spiderman_classic.png",
     "abilities": ["Evade", "Agility"],
     "tags": ["Avenger", "Hero"],
     "bio": "Peter Parker, a nerdy scientist, leads a secret double life as the Amazing Spider-Man! ...",
@@ -231,7 +231,7 @@
         "physical_resistance": 0,
         "energy_resistance": 0
       }
-      // Add more objects for other rarity/rank combos as needed
+      
     ]
   }
 ]

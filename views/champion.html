@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Champions</title>
+  <title>Champion Details</title>
   <link rel="stylesheet" href="../../style.css" />
 </head>
 <body>
@@ -19,8 +19,11 @@
     </nav>
   </header>
   <main>
-    <h1>Champions</h1>
-    <ul id="champion-list"></ul>
+    <div id="champion-details"></div>
+    <label for="prestige-level">Prestige Level (0-200):</label>
+    <input type="number" id="prestige-level" min="0" max="200" value="0">
+    <div id="stats-output"></div>
   </main>
-  <script src="championsList.js"></script>
+  <script src="championDetail.js"></script>
 </body>
+</html>
