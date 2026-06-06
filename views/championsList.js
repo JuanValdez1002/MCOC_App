@@ -10,9 +10,12 @@ fetch('../data/champions.json')
       const card = document.createElement('div');
       card.className = `champion-card class-${champ.class.toLowerCase()}`;
       card.onclick = () => window.location.href = `champion.html?id=${idx}`;
-      
+      const imgSrc = (typeof champ.image === 'string' && champ.image.startsWith('http'))
+        ? champ.image
+        : `../${champ.image}`;
+
       card.innerHTML = `
-        <img src="../${champ.image}" alt="${champ.name}" class="champion-avatar">
+        <img src="${imgSrc}" alt="${champ.name}" class="champion-avatar">
         <div class="champion-name">${champ.name.toUpperCase()}</div>
       `;
       
